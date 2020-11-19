@@ -1,0 +1,231 @@
+<header>
+	<%= render 'home/header' %>
+</header>
+
+
+
+
+
+	<% if user_signed_in? %>
+
+	    <main role="main">
+
+	      <section class="jumbotron text-center bg-dark" style="border-radius: 0 !important; margin-bottom: 0;">
+	        <div class="container">
+	          <h1 class="jumbotron-heading" style="color: #01a6ee;">Workout of The Day</h1>
+
+	          <br>
+
+	          <p class="lead text-muted">Flat Barbell Press,    Reps: 20-20-20</p>
+
+	          <p class="lead text-muted">Incline Dumbbell Fly,     Reps: 6-6-6</p>
+	          <p class="lead text-muted">Hammer Press, Reps: 12-12-12</p>
+	          <p class="lead text-muted">Incline Bench Press, Reps: 15-15-15-15-15</p>
+	          <p class="lead text-muted">Barbell French Press, Reps: 15-15-15</p>
+	          <p class="lead text-muted">Tricep Cable Press Down, Reps: 6-6-6-6-6-6-6-6</p>
+	          <p class="lead text-muted">Bent Over Rear Delt Fly, Reps: 20-20-20-20</p>
+	          
+
+	          <p>
+	          	<br>
+	          	<br>
+	           <!--<%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-light", style: "color: #01a6ee" %>-->
+	          </p>
+
+
+	        </div>
+	      </section>
+
+	      <div class="album py-5 bg-dark">
+	        <div class="container">
+
+	          <div class="row">
+	            <div class="col-md-6">
+	              <div class="card mb-6 box-shadow text-center">
+
+	              	<%= image_tag "3dayplanicon.png", class:"card-img-top"%>
+	            
+	                <div class="card-body text-center">
+
+	                	<p class="card-text"></p>
+	                	
+	                  
+	                  <div class="text-center">
+	                    <div class="btn-group text-center">
+
+
+	                    		<%= link_to "3-Day Plan", homepage_workouts_path, class: "btn btn-dark", style: "color: #01a6ee" %>
+	                      
+	         
+	                    		<br>
+	                    </div>	       
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+
+	            <div class="col-md-6">
+	              <div class="card mb-6box-shadow">
+	                <%= image_tag "5dayicon.png", class:"card-img-top" %>
+	                <div class="card-body text-center">
+	                  <p class="card-text"> </p>
+	                  <div class="text-center">
+	                    <div class="btn-group text-center">
+
+	                      <%= link_to "5-Day Plan", homepage_5dayplan_path, class: "btn btn-dark", style: "color: #01a6ee" %>
+	                     
+	                    </div>
+	                   
+	                  </div>
+	                </div>
+	              </div>
+	            </div>
+	            
+	          </div>
+	        </div>
+	        <br>
+	        <br>
+	        <br>
+	      </div>
+
+	    </main>
+
+	   		<footer class="page-footer font-small bg-light">
+
+			  <!-- Copyright -->
+			  <div class="footer-copyright text-center py-3">&copy; Copyrights OnlyFitness, Inc. All rights reserved.
+			    <p class="float-right"><a href="#">Back to top</a></p>
+			  </div>
+			  <!-- Copyright -->
+
+			</footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+	    <script src="../../assets/js/vendor/popper.min.js"></script>
+	    <script src="../../dist/js/bootstrap.min.js"></script>
+	    <script src="../../assets/js/vendor/holder.min.js"></script>
+  
+
+	 <% else %>
+
+		    <main role="main">
+
+		      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+		        <ol class="carousel-indicators">
+		          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		          <li data-target="#myCarousel" data-slide-to="1"></li>
+		          <li data-target="#myCarousel" data-slide-to="2"></li>
+		        </ol>
+
+		        <div class="carousel-inner">
+		          <div class="carousel-item active">
+		            <%= image_tag "gym1.jpeg", style: 'height:55vw;width:100vw;margin-bottom:20px;' %>
+		            <div class="container">
+		              <div class="carousel-caption text-left">
+		                <h1>Welcome to OnlyFitness.</h1>
+		                <p>No lies, just gains.</p>
+		                <p><%= link_to "Sign Up", new_user_registration_path, class:"btn btn-lg", style: "background-color: #01a6ee; color: black" %></p>
+		              </div>
+		            </div>
+		          </div>
+
+		          <div class="carousel-item">
+		            <%= image_tag "gym2.jpeg", style: 'height:55vw;width:100vw;margin-bottom:20px;' %>
+		            <div class="container">
+		              <div class="carousel-caption">
+		                <h1>Returning User?</h1>
+		                <p>Get off your computer and start working out.</p>
+		                <p><%= link_to "Log In", new_user_session_path, class:"btn btn-lg", style: "background-color: #01a6ee; color: black" %></p>
+		              </div>
+		            </div>
+		          </div>
+		          <div class="carousel-item">
+		            <%= image_tag "gym3.jpeg", style: 'height:55vw;width:100vw;margin-bottom:20px;' %>
+		            <div class="container">
+		              <div class="carousel-caption text-right">
+		                <h1>Need a new workout plan?</h1>
+		                <p>Click here to learn about our unique workout plans and how our customizable system works to make working out easier.</p>
+		                <p><%= link_to "About Us", home_about_path, class:"btn btn-lg", style: "background-color: #01a6ee; color: black" %></p>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+		          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		          <span class="sr-only">Previous</span>
+		        </a>
+		        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+		          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		          <span class="sr-only">Next</span>
+		        </a>
+		      </div>
+
+
+		      <!-- Marketing messaging and featurettes
+		      ================================================== -->
+		      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+		      <div class="container marketing">
+
+		        <!-- Three columns of text below the carousel -->
+		        <div class="row">
+		          <div class="col-lg-4">
+		            <%= image_tag "back icon.png", class:"rounded-circle", style: "height: 140px"%>
+		            <h2>Upper Body</h2>
+		            <p>These plans are focused primarily on upper body because that's the only parts that matter.  With amazing chest and triceps or back and biceps workouts, you will definitely see gains in your upper body.</p>
+		            
+		          </div><!-- /.col-lg-4 -->
+		          <div class="col-lg-4">
+		            <%= image_tag "bicep icon.png", class:"rounded-circle", style: "height: 140px"%>
+		            <h2>Arms</h2>
+		            <p>Once again, these are also equally as important as your chest and back.  If you need to fill out your shirt sleeves then you better sign up.  You will be guaranteed to look just like the icon shown above...probably not but still sign up. </p>
+		            
+		          </div><!-- /.col-lg-4 -->
+		          <div class="col-lg-4">
+		           <%= image_tag "leg icon.png", class:"rounded-circle", style: "height: 140px"%>
+		            <h2>Legs</h2>
+		            <p>We debated even including legs because leg day is the worst and honestly no one hits them.  However, to make this a somewhat balanced workout plan we included one leg workout a week but you are more than welcome to skip it and hit another bicep and tricep workout instead. </p>
+		          
+		          </div><!-- /.col-lg-4 -->
+		        </div><!-- /.row -->
+
+
+		        
+
+		      </div><!-- /.container -->
+
+		<br>
+		<br>
+		<br>
+		      <!-- FOOTER -->
+		      
+			<footer class="page-footer font-small bg-light">
+
+			  <!-- Copyright -->
+			  <div class="footer-copyright text-center py-3">&copy; Copyrights OnlyFitness, Inc. All rights reserved.
+			    <p class="float-right"><a href="#">Back to top</a></p>
+			  </div>
+			  <!-- Copyright -->
+
+			</footer>
+		     
+		    </main>
+
+<% end %>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+ 
+
+	
+

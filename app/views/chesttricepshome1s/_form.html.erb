@@ -1,0 +1,45 @@
+<%= form_with(model: chesttricepshome1, local: true) do |form| %>
+  <% if chesttricepshome1.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chesttricepshome1.errors.count, "error") %> prohibited this chesttricepshome1 from being saved:</h2>
+
+      <ul>
+        <% chesttricepshome1.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+<br> <br><br> <br>
+<div class= "container">
+
+  <div class="card">
+    <h5 class="card-header">Edit Workout</h5>
+    <div class="card-body">
+      
+          <div class="field form-group">
+            <!--<%= form.label :exercise, class:"form-control", placeholder:"Exercise"%> -->
+            <%= form.text_field :exercise, class:"form-control", placeholder:"Exercise" %>
+          </div>
+
+          <div class="field form-group">
+            <!-- <%= form.label :reps %> -->
+            <%= form.text_field :reps, class:"form-control", placeholder:"Reps" %>
+          </div>
+
+          <div class="field form-group">
+           <!-- <%= form.label :sets %> -->
+            <%= form.number_field :sets, class:"form-control", placeholder:"Sets" %>
+          </div>
+
+          <div class="actions">
+            <%= form.submit "Update Exercise", class:"btn btn-dark" %>
+          </div>
+        <% end %>
+
+    </div>
+  </div>
+  
+</div>

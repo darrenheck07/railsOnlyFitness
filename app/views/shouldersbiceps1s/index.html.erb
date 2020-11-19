@@ -1,0 +1,47 @@
+<header>
+  <%= render 'home/header' %>
+</header>
+
+<p id="notice"><%= notice %></p>
+
+<div class = "container"> 
+
+<div class = "row justify-content-center">
+  <h1>Shoulders/Biceps 1</h1>
+</div>
+
+<table class = "table table-hover table-dark">
+  <thead class = "thead-light">
+    <tr>
+      <th>Exercise</th>
+      <th>Reps</th>
+      <th>Sets</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shouldersbiceps1s.each do |shouldersbiceps1| %>
+      <tr>
+        <td style="color: #01a6ee;"><%= shouldersbiceps1.exercise %></td>
+        <td style="color: #01a6ee;"><%= shouldersbiceps1.reps %></td>
+        <td style="color: #01a6ee;"><%= shouldersbiceps1.sets %></td>
+        <td><%= link_to 'Edit', edit_shouldersbiceps1_path(shouldersbiceps1), class: "btn btn-secondary", style: "color: #01a6ee" %></td>
+        <td><%= link_to 'Destroy', shouldersbiceps1, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-secondary", style: "color: #01a6ee" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--<%= link_to 'New Shouldersbiceps1', new_shouldersbiceps1_path %> -->
+
+<br>
+<br>
+
+<div class = "row justify-content-center" >
+  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX0XUsuxWHRQd" width="500" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+</div>
+
+</div>

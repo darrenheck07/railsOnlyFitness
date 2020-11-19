@@ -1,0 +1,2 @@
+module Latstraps1sHelper
+end
