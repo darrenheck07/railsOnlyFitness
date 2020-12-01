@@ -1,0 +1,62 @@
+<%= form_with(model: shouldersbiceps2, local: true) do |form| %>
+  <% if shouldersbiceps2.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(shouldersbiceps2.errors.count, "error") %> prohibited this shouldersbiceps2 from being saved:</h2>
+
+      <ul>
+        <% shouldersbiceps2.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :exercise %>
+    <%= form.text_field :exercise %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reps %>
+    <%= form.text_field :reps %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sets %>
+    <%= form.number_field :sets %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+
+<!--
+<br> <br><br> <br>
+<div class= "container">
+
+  <div class="card">
+    <h5 class="card-header">Edit Workout</h5>
+    <div class="card-body">
+      
+          <div class="field form-group">
+            <%= form.select(:exercise, options_for_select(['Select Exercise', 'Flat Bench Rear Delt Fly', 'Standing Dumbbell Side Lateral', 'Seated Cable Shoulder Press', 'Single Arm Machine Preacher Curl', 'Dumbbell Hammer Curl', 'Barbell Preacher Curl', 'Test']), {}, {class: "form-control"}) %>
+          </div>
+
+          <div class="field form-group">
+            <%= form.select(:reps, options_for_select(['Reps', '15-15-12-12', '12-10-8-6', '20-15-12-10', '10']), {}, {class: "form-control"}) %>
+          </div>
+
+          <div class="field form-group">
+            <%= form.number_field :sets, class:"form-control", placeholder:"Sets" %>
+          </div>
+
+          <div class="actions">
+            <%= form.submit "Update Exercise", class:"btn btn-dark" %>
+          </div>
+        <% end %>
+
+    </div>
+  </div>
+  
+</div>-->

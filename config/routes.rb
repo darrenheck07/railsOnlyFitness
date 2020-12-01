@@ -1,4 +1,38 @@
 Rails.application.routes.draw do
+  resources :bicepstricepshome4s
+  resources :bicepstricepshome3s
+  resources :bicepstricepshome2s
+  resources :bicepstricepshome1s
+  resources :bicepstriceps4s
+  resources :bicepstriceps3s
+  resources :bicepstriceps2s
+  resources :bicepstriceps1s
+  resources :legshome4s
+  resources :legs4s
+  resources :legshome3s
+  resources :legs3s
+  resources :legshome2s
+  resources :legs2s
+  resources :legshome1s
+  resources :legs1s
+  resources :latstrapshome4s
+  resources :latstraps4s
+  resources :shouldersbicepshome4s
+  resources :shouldersbiceps4s
+  resources :chesttricepshome4s
+  resources :chesttriceps4s
+  resources :chesttricepshome3s
+  resources :latstrapshome3s
+  resources :latstraps3s
+  resources :shouldersbicepshome3s
+  resources :shouldersbiceps3s
+  resources :chesttriceps3s
+  resources :latstrapshome2s
+  resources :latstraps2s
+  resources :shouldersbicepshome2s
+  resources :shouldersbiceps2s
+  resources :chesttricepshome2s
+  resources :chesttriceps2s
   resources :latstrapshome1s
   resources :latstraps1s
   resources :shouldersbicepshome1s
@@ -10,6 +44,10 @@ Rails.application.routes.draw do
   get 'homepage/5dayplan'
   get 'homepage/workouts'
   get 'homepage/additionalfeatures'
+  get 'homepage/shouldersbicepsvideos'
+  get 'homepage/latstrapsvideos'
+  get 'homepage/bicepstricepsvideos'
+  get 'homepage/legsvideos'
   get 'home/about'
   root 'home#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

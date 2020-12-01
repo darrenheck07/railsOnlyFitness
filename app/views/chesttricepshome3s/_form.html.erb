@@ -1,0 +1,63 @@
+<%= form_with(model: chesttricepshome3, local: true) do |form| %>
+  <% if chesttricepshome3.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(chesttricepshome3.errors.count, "error") %> prohibited this chesttricepshome3 from being saved:</h2>
+
+      <ul>
+        <% chesttricepshome3.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :exercise %>
+    <%= form.text_field :exercise %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reps %>
+    <%= form.text_field :reps %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sets %>
+    <%= form.number_field :sets %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
+
+<!--
+<br> <br><br> <br>
+<div class= "container">
+
+  <div class="card">
+    <h5 class="card-header">Edit Workout</h5>
+    <div class="card-body">
+      
+          <div class="field form-group">
+            <%= form.select(:exercise, options_for_select(['Select Exercise', 'Weighted Push Ups', 'Decline Bench Press', 'Dumbbell Chest Fly', 'Overhead Dumbbell Extension', 'Dumbbell Kickback' ,'Barbell Skull Crusher']), {}, {class: "form-control"}) %>
+          </div>
+
+          <div class="field form-group">
+            <%= form.select(:reps, options_for_select(['Reps', '30', '20', '15', '10']), {}, {class: "form-control"}) %>
+          </div>
+
+          <div class="field form-group">
+            <%= form.number_field :sets, class:"form-control", placeholder:"Sets" %>
+          </div>
+
+          <div class="actions">
+            <%= form.submit "Update Exercise", class:"btn btn-dark" %>
+          </div>
+        <% end %>
+
+    </div>
+  </div>
+  
+</div>-->
+

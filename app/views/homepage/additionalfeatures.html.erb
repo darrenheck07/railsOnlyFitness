@@ -9,22 +9,22 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  Chest & Triceps <span class="sr-only">(current)</span>
-                </a>
+                <%= link_to "Chest & Triceps Videos", homepage_additionalfeatures_path, class: "nav-link", style: "color: #01a6ee" %>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                 
-                  Back & Biceps
-                </a>
+                <%= link_to "Shoulders & Biceps Videos", homepage_shouldersbicepsvideos_path, class: "nav-link", style: "color: #01a6ee" %>
               </li>
           
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  
-                  Leg Exercises
-                </a>
+                
+                <%= link_to "Lats & Traps Videos", homepage_latstrapsvideos_path, class: "nav-link", style: "color: #01a6ee" %>
+              </li>
+
+              
+
+              <li class="nav-item">
+                
+                <%= link_to "Legs Videos", homepage_legsvideos_path, class: "nav-link", style: "color: #01a6ee" %>
               </li>
             </ul>
           </div>
@@ -32,116 +32,122 @@
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
 
-          <h2>Exercise Tutorials</h2>
-          <div class="table-responsive">
-            <table class="table table-striped table-sm">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Chest</th>
-                  <th>Triceps</th>
-                  
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  
+          <br>
+
+          <h2 class="text-center">Chest & Triceps Exercise Tutorials</h2>
+          <br>
+
+          <div class="container-fluid">
+            <div class="table-responsive">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th >Chest</th>
+                    <th>Triceps</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    
+                    <td>
+                    <%= link_to 'Flat Bench Press', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+                    <td>
+                    <%= link_to 'Rope Overhead Extension', 'https://www.youtube.com/watch?v=GzmlxvSFE7A', :target => "_blank", style:"color: #343a40;"%> 
+                  </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    
                   <td>
-                  <%= link_to 'Flat Bench Press', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
+                    <%= link_to 'Incline Bench Press', 'https://www.youtube.com/watch?v=HZ4tKOfFT50', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
                   <td>
-                  <%= link_to 'Rope Overhead Extension', 'https://www.youtube.com/watch?v=GzmlxvSFE7A', :target => "_blank" %> 
-                </td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  
-                <td>
-                  <%= link_to 'Incline Bench Press', 'https://www.youtube.com/watch?v=HZ4tKOfFT50', :target => "_blank" %> 
-                </td>
-                <td>
-                  <%= link_to 'Rope Tricep Press Down', 'https://www.youtube.com/watch?v=8CbJK7mmisE', :target => "_blank" %> 
-                </td>
+                    <%= link_to 'Rope Tricep Press Down', 'https://www.youtube.com/watch?v=8CbJK7mmisE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
 
-                </tr>
-                <tr>
-                  <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>
+                    <%= link_to 'Decline Bench Press', 'https://www.youtube.com/watch?v=NM5lbuq92Aw', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
                   <td>
-                  <%= link_to 'Decline Bench Press', 'https://www.youtube.com/watch?v=NM5lbuq92Aw', :target => "_blank" %> 
-                </td>
-                <td>
-                  <%= link_to 'Barbell Skull Crusher', 'https://www.youtube.com/watch?v=d_KZxkY_0cM', :target => "_blank" %> 
-                </td>
+                    <%= link_to 'Barbell Skull Crusher', 'https://www.youtube.com/watch?v=d_KZxkY_0cM', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>4</td>
+              
+                    <td>
+                    <%= link_to 'Cable Crossover', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+
+                   <td>
+                    <%= link_to 'Double Arm Dumbbell Overhead Extension', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+
+                    
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    
+                    <td>
+                    <%= link_to 'Dumbbell Fly', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+
+                   <td>
+                    <%= link_to 'Machine Tricep Press Down', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+
+                    
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                   
+                    <td>
+                    <%= link_to 'Hammer Press', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+
+                   <td>
+                    <%= link_to 'Weighted Dips', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                   
+                    <td>
+                    <%= link_to 'Dumbbell Bench Press', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+
+                   <td>
+                    <%= link_to 'Tricep Kickbacks', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;"%> 
+                  </td>
+
+
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    
+                    <td>
+                    <%= link_to 'Dumbbell Incline Bench Press', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;"%> 
+                  </td>
+
+                   <td>
+                    <%= link_to 'Underhand Tricep Pushdown', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank", style:"color: #343a40;" %> 
+                  </td>
+                    
+                  </tr>
                   
-                </tr>
-                <tr>
-                  <td>4</td>
-            
-                  <td>
-                  <%= link_to 'Cable Crossover', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-
-                 <td>
-                  <%= link_to 'Double Arm Dumbbell Overhead Extension', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-
                   
-                </tr>
-                <tr>
-                  <td>5</td>
-                  
-                  <td>
-                  <%= link_to 'Dumbbell Fly', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-
-                 <td>
-                  <%= link_to 'Machine Tricep Press Down', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-
-                  
-                </tr>
-                <tr>
-                  <td>6</td>
-                 
-                  <td>
-                  <%= link_to 'Hammer Press', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-
-                 <td>
-                  <%= link_to 'Weighted Dips', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-                  
-                </tr>
-                <tr>
-                  <td>7</td>
-                 
-                  <td>
-                  <%= link_to 'Dumbbell Bench Press', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-
-                 <td>
-                  <%= link_to 'Tricep Kickbacks', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-
-
-                </tr>
-                <tr>
-                  <td>8</td>
-                  
-                  <td>
-                  <%= link_to 'Dumbbell Incline Bench Press', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-
-                 <td>
-                  <%= link_to 'Underhand Tricep Pushdown', 'https://www.youtube.com/watch?v=rxD321l2svE', :target => "_blank" %> 
-                </td>
-                  
-                </tr>
-                
-                
-              </tbody>
-            </table>
+                </tbody>
+              </table>
+            </div>
           </div>
         </main>
       </div>
@@ -155,41 +161,6 @@
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
 
-    <!-- Icons -->
-    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
-    <script>
-      feather.replace()
-    </script>
 
-    <!-- Graphs -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script>
-      var ctx = document.getElementById("myChart");
-      var myChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          datasets: [{
-            data: [15339, 21345, 18483, 24003, 23489, 24092, 12034],
-            lineTension: 0,
-            backgroundColor: 'transparent',
-            borderColor: '#007bff',
-            borderWidth: 4,
-            pointBackgroundColor: '#007bff'
-          }]
-        },
-        options: {
-          scales: {
-            yAxes: [{
-              ticks: {
-                beginAtZero: false
-              }
-            }]
-          },
-          legend: {
-            display: false,
-          }
-        }
-      });
-    </script>
+    
   </body>

@@ -12,26 +12,31 @@
   <% end %>
 
 
-
-
-
-
-
 <br> <br><br> <br>
 <div class= "container">
 
   <div class="card">
     <h5 class="card-header">Edit Workout</h5>
     <div class="card-body">
-      
+    
+
           <div class="field form-group">
-            <!--<%= form.label :exercise, class:"form-control", placeholder:"Exercise"%> -->
-            <%= form.text_field :exercise, class:"form-control", placeholder:"Exercise" %>
+           <!--<%= form.select :exercise, options_for_select(["Select Exercise", "Barbell Decline Floor Press", "Machine Chest Fly", "Chest Dip",
+            "Rack Double Arm Overhead Extension", "Tricep Cable Overhead Extenstion", "Flat Bench Dumbbell Extension", "Test"]), class:"selectpicker", style: "color: #01a6ee"%>-->
+
+           <%= form.select(:exercise, options_for_select(['Select Exercise', "Barbell Decline Floor Press", "Machine Chest Fly", "Chest Dip",
+            "Rack Double Arm Overhead Extension", "Tricep Cable Overhead Extenstion", "Flat Bench Dumbbell Extension", "Test"]), {}, {class: "form-control"}) %>
           </div>
+
+          
+            <!--<%= form.label :exercise, class:"form-control", placeholder:"Exercise"%> -->
+            <!--<%= form.text_field :exercise, class:"form-control", placeholder:"Exercise" %>-->
+          
 
           <div class="field form-group">
             <!-- <%= form.label :reps %> -->
-            <%= form.text_field :reps, class:"form-control", placeholder:"Reps" %>
+            <%= form.select(:reps, options_for_select(['Reps', '12', '10', '8', '6']), {}, {class: "form-control"}) %>
+            <!--<%= form.text_field :reps, class:"form-control", placeholder:"Reps" %>-->
           </div>
 
           <div class="field form-group">

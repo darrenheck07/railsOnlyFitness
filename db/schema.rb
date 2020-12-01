@@ -10,7 +10,71 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_12_063659) do
+ActiveRecord::Schema.define(version: 2020_12_01_022607) do
+
+  create_table "bicepstriceps1s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "bicepstriceps2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "bicepstriceps3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "bicepstriceps4s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "bicepstricepshome1s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "bicepstricepshome2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "bicepstricepshome3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "bicepstricepshome4s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "chest_triceps1s", force: :cascade do |t|
     t.string "exercise"
@@ -25,7 +89,55 @@ ActiveRecord::Schema.define(version: 2020_11_12_063659) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "chesttriceps2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "chesttriceps3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "chesttriceps4s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "chesttricepshome1s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "chesttricepshome2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "chesttricepshome3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "chesttricepshome4s", force: :cascade do |t|
     t.string "exercise"
     t.string "reps"
     t.integer "sets"
@@ -41,7 +153,119 @@ ActiveRecord::Schema.define(version: 2020_11_12_063659) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "latstraps2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "latstraps3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "latstraps4s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "latstrapshome1s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "latstrapshome2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "latstrapshome3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "latstrapshome4s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "legs1s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "legs2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "legs3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "legs4s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "legshome1s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "legshome2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "legshome3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "legshome4s", force: :cascade do |t|
     t.string "exercise"
     t.string "reps"
     t.integer "sets"
@@ -57,7 +281,55 @@ ActiveRecord::Schema.define(version: 2020_11_12_063659) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "shouldersbiceps2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shouldersbiceps3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shouldersbiceps4s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "shouldersbicepshome1s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shouldersbicepshome2s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shouldersbicepshome3s", force: :cascade do |t|
+    t.string "exercise"
+    t.string "reps"
+    t.integer "sets"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "shouldersbicepshome4s", force: :cascade do |t|
     t.string "exercise"
     t.string "reps"
     t.integer "sets"

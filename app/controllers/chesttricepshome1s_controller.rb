@@ -43,7 +43,7 @@ class Chesttricepshome1sController < ApplicationController
   def update
     respond_to do |format|
       if @chesttricepshome1.update(chesttricepshome1_params)
-        format.html { redirect_to @chesttricepshome1, notice: 'Chesttricepshome1 was successfully updated.' }
+        format.html { redirect_to "/chesttricepshome1s"}
         format.json { render :show, status: :ok, location: @chesttricepshome1 }
       else
         format.html { render :edit }

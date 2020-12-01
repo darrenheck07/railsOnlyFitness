@@ -20,13 +20,11 @@
     <div class="card-body">
       
           <div class="field form-group">
-            <!--<%= form.label :exercise, class:"form-control", placeholder:"Exercise"%> -->
-            <%= form.text_field :exercise, class:"form-control", placeholder:"Exercise" %>
+            <%= form.select(:exercise, options_for_select(['Select Exercise', 'Flat Bench Rear Delt Fly', 'Standing Dumbbell Side Lateral', 'Seated Cable Shoulder Press', 'Single Arm Machine Preacher Curl', 'Dumbbell Hammer Curl', 'Barbell Preacher Curl', 'Test']), {}, {class: "form-control"}) %>
           </div>
 
           <div class="field form-group">
-            <!-- <%= form.label :reps %> -->
-            <%= form.text_field :reps, class:"form-control", placeholder:"Reps" %>
+            <%= form.select(:reps, options_for_select(['Reps', '15-15-12-12', '12-10-8-6', '20-15-12-10', '10']), {}, {class: "form-control"}) %>
           </div>
 
           <div class="field form-group">

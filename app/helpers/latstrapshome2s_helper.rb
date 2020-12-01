@@ -1,0 +1,2 @@
+module Latstrapshome2sHelper
+end

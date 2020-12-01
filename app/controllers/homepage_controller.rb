@@ -10,6 +10,19 @@ before_action :authenticate_user!
   def additionalfeatures
   end
   
+  def shoulderbicepsvideos
+  end
+
+  def latstrapsvideos
+  end
+
+  def bicepstricepsvideos
+  end
+
+  def legsvideos
+  end
+
+
   def location
   end
   

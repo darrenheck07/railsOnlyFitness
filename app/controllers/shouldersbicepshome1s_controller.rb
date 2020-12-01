@@ -43,7 +43,7 @@ class Shouldersbicepshome1sController < ApplicationController
   def update
     respond_to do |format|
       if @shouldersbicepshome1.update(shouldersbicepshome1_params)
-        format.html { redirect_to shouldersbicepshome1_url, notice: 'Shouldersbicepshome1 was successfully updated.' }
+        format.html { redirect_to "/shouldersbicepshome1s"}
         #format.json { render :show, status: :ok, location: @shouldersbicepshome1 }
         format.json { head :no_content }
       else

@@ -43,7 +43,7 @@ class Latstrapshome1sController < ApplicationController
   def update
     respond_to do |format|
       if @latstrapshome1.update(latstrapshome1_params)
-        format.html { redirect_to @latstrapshome1, notice: 'Latstrapshome1 was successfully updated.' }
+        format.html { redirect_to "/latstrapshome1s"}
         format.json { render :show, status: :ok, location: @latstrapshome1 }
       else
         format.html { render :edit }
