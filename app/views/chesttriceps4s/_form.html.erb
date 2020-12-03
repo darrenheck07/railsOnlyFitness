@@ -11,27 +11,7 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :exercise %>
-    <%= form.text_field :exercise %>
-  </div>
-
-  <div class="field">
-    <%= form.label :reps %>
-    <%= form.text_field :reps %>
-  </div>
-
-  <div class="field">
-    <%= form.label :sets %>
-    <%= form.number_field :sets %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-
-
-<!--
+  
 <br> <br><br> <br>
 <div class= "container">
 
@@ -41,7 +21,7 @@
       
           <div class="field form-group">
            <%= form.select(:exercise, options_for_select(['Select Exercise', "Barbell Decline Floor Press", "Machine Chest Fly", "Chest Dip",
-            "Rack Double Arm Overhead Extension", "Tricep Cable Overhead Extenstion", "Flat Bench Dumbbell Extension", "Test"]), {}, {class: "form-control"}) %>
+            "Rack Double Arm Overhead Extension", "Tricep Cable Overhead Extenstion", "Flat Bench Dumbbell Extension"]), {}, {class: "form-control"}) %>
 
           </div>
 
@@ -61,5 +41,5 @@
     </div>
   </div>
   
-</div>-->
+</div>
 
